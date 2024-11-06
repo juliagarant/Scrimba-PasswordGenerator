@@ -9,17 +9,19 @@ body {
     background: #1F2937;
     
     padding: 2rem;
+    max-width: 500px;
+margin: auto;
 }
 h1 {
     font-family: inherit;
     font-weight: 800;
 }
 span{
-        color: #10B981;
+    color: #10B981;
 
 }
 button {
-    margin-top: 2rem;
+    margin: 2rem 0;
     cursor: pointer;
     border: 0;
     padding: 8px 16px;
@@ -27,9 +29,9 @@ button {
     background: #10B981;
     color: white;
     font-family: inherit;
+    font-size: inherit;
 }
 hr{
-    padding: 0.5rem;
     color: #2F3E53;
 }
 #passwords{
@@ -43,9 +45,14 @@ hr{
 #password1, #password2{
     color: #10B981;
     background: #273549;
-    width: 211px;
-    height: 39px;
+    width: 200px;
+    height: 25px;
     border-radius: 6px;
     text-align: center;
-    padding-top: 1rem;
+    padding: 0.5rem 0;
 }
+@media only screen and (max-width: 500px) {
+    #passwords {
+      justify-content: center;
+    }
+  }
